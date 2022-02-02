@@ -7,4 +7,12 @@
 
   background-color: lighten(#222823, $amount: 80);
   color: #08090a;
+  height: 100%;
+}
+
+.page-title {
+  text-align: center;
+  margin-top: 48px;
+  margin-bottom: 54px;
+  text-transform: uppercase;
 }
