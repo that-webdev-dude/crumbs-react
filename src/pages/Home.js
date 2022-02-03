@@ -1,5 +1,6 @@
 // components //
 import AppContainer from '../components/AppContainer';
+import AppRecipes from '../components/AppRecipes';
 
 // styles //
 import './Home.scss';
@@ -13,14 +14,9 @@ export default function Home() {
   return (
     <div className='home'>
       <AppContainer>
-        {data && <div>data ok</div>}
-        <h2 className='page-title'>Home</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
-          modi rerum quae, voluptatum doloremque enim? Nemo consequuntur,
-          provident nobis ipsam eum maiores possimus ea, mollitia laboriosam vel
-          molestiae, cumque aliquam.
-        </p>
+        {loading && <p>loading...</p>}
+        {data && <AppRecipes recipes={data}></AppRecipes>}
+        {error && <p>{error}</p>}
       </AppContainer>
     </div>
   );
