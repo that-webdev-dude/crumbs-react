@@ -17,8 +17,8 @@ export const useFetch = (url = '', options = { method: 'GET', data: {} }) => {
     };
 
     const fetchData = async () => {
-      setLoading(true);
       try {
+        setLoading(true);
         const response = await fetch(url, fetchOptions);
         if (!response.ok) {
           throw new Error();
