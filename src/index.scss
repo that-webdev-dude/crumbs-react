@@ -9,10 +9,7 @@
 body {
   font-family: 'Fredoka One', cursive;
   font-family: 'Montserrat', sans-serif;
-
-  #root {
-    height: 100vh;
-  }
+  background: lighten(#222823, $amount: 80);
 }
 
 a {

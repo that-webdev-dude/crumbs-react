@@ -2,13 +2,21 @@
 import './AppRecipes.scss';
 
 export default function AppReripes({ recipes }) {
-  return recipes.map((recipe) => (
-    <div key={recipe.id}>
-      <h3>{recipe.title}</h3>
-      <div>
-        <p>Cooking time: {recipe.cookingTime}</p>
-        <p>Cal: {recipe.calories}</p>
-      </div>
+  return (
+    <div className='app-recipes'>
+      {recipes.map((recipe) => (
+        <div key={recipe.id} className='card'>
+          <div className='card-header'>
+            <h2 className='recipe-title'>{recipe.title}</h2>
+          </div>
+          <div className='card-body'>
+            <div className='recipe-info'>
+              <small>Cooking time: {recipe.cookingTime}</small>
+              <small>Cal: {recipe.calories}</small>
+            </div>
+          </div>
+        </div>
+      ))}
     </div>
-  ));
+  );
 }

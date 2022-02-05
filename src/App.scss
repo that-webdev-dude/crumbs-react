@@ -5,14 +5,32 @@
   $some-color: #a7a2a9;
   $some-color: #08090a;
 
-  background-color: lighten(#222823, $amount: 80);
-  color: #08090a;
-  height: 100%;
-}
+  .page-title {
+    text-align: center;
+    margin-top: 48px;
+    margin-bottom: 54px;
+    text-transform: uppercase;
+  }
 
-.page-title {
-  text-align: center;
-  margin-top: 48px;
-  margin-bottom: 54px;
-  text-transform: uppercase;
+  .card {
+    background: #f4f7f5;
+    box-shadow: 0px 4px 4px #0000000d;
+    cursor: pointer;
+
+    .card-header {
+      background: #575a5e;
+      color: #f4f7f5;
+      padding: 24px;
+      height: 8px * 24;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    .card-body {
+      background: #f4f7f5;
+      color: #222823;
+      padding: 24px;
+    }
+  }
 }
