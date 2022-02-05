@@ -13,7 +13,7 @@ export default function Search() {
   const keyword = queryParams.get('q');
 
   return (
-    <div className='search'>
+    <div className='page search'>
       <AppContainer>
         <h2 className='page-title'>{`search ${keyword}`}</h2>
         <p>

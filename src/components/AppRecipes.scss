@@ -1,17 +1,5 @@
 .app-recipes {
-  margin: 48px 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-
   gap: 24px;
-
-  .recipe-title {
-    margin-bottom: 16px;
-  }
-
-  .recipe-info {
-    color: #575a5e;
-    display: flex;
-    justify-content: space-between;
-  }
 }

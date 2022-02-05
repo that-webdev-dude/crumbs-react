@@ -12,7 +12,7 @@ export default function Home() {
   const { data, error, loading } = useFetch(`http://localhost:3000/recipes`);
 
   return (
-    <div className='home'>
+    <div className='page home'>
       <AppContainer>
         {loading && <p>loading...</p>}
         {data && <AppRecipes recipes={data}></AppRecipes>}

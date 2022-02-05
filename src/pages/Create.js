@@ -6,7 +6,7 @@ import './Create.scss';
 
 export default function Create() {
   return (
-    <div className='create'>
+    <div className='page create'>
       <AppContainer>
         <h2 className='page-title'>Create</h2>
         <p>
