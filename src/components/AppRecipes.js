@@ -4,24 +4,15 @@ import { Link } from 'react-router-dom';
 // styles //
 import './AppRecipes.scss';
 
+// components //
+import AppRecipe from '../components/AppRecipe';
+
 export default function AppReripes({ recipes }) {
   return (
     <div className='app-recipes'>
       {recipes.map((recipe) => (
-        <Link key={recipe.id} className='card' to={`/recipes/${recipe.id}`}>
-          <div className='card-header'>
-            <h3>{recipe.title}</h3>
-          </div>
-          <div className='card-body'>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt iste
-            repellat omnis. Voluptatem dolores perspiciatis repudiandae
-            doloribus amet dolorum voluptatibus quos placeat, quisquam at quo!
-            Quas deserunt libero aut vel!
-          </div>
-          <div className='card-footer'>
-            <small>Cooking time: {recipe.cookingTime}</small>
-            <small>Cal: {recipe.calories}</small>
-          </div>
+        <Link key={recipe.id} to={`/recipes/${recipe.id}`}>
+          <AppRecipe recipe={recipe}></AppRecipe>
         </Link>
       ))}
     </div>

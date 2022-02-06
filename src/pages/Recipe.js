@@ -23,7 +23,7 @@ export default function Recipe() {
     <div className='page recipe'>
       <AppContainer>
         {loading && <div>loading...</div>}
-        {recipe && <AppRecipe recipe={recipe}></AppRecipe>}
+        {recipe && <AppRecipe recipe={recipe} expanded></AppRecipe>}
         {error && <div>{error}</div>}
       </AppContainer>
     </div>
