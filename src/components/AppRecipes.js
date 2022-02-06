@@ -9,7 +9,9 @@ export default function AppReripes({ recipes }) {
     <div className='app-recipes'>
       {recipes.map((recipe) => (
         <Link key={recipe.id} className='card' to={`/recipes/${recipe.id}`}>
-          <h2 className='card-header'>{recipe.title}</h2>
+          <div className='card-header'>
+            <h3>{recipe.title}</h3>
+          </div>
           <div className='card-body'>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt iste
             repellat omnis. Voluptatem dolores perspiciatis repudiandae

@@ -10,8 +10,8 @@
 
     .page-title {
       text-align: center;
-      margin-top: 48px;
-      margin-bottom: 54px;
+      // margin-top: 48px;
+      // margin-bottom: 54px;
       text-transform: uppercase;
     }
   }
@@ -19,7 +19,6 @@
   .card {
     background: #f4f7f5;
     box-shadow: 0px 4px 4px #0000000d;
-    cursor: pointer;
 
     .card-header {
       border-top-left-radius: 8px;
@@ -38,11 +37,6 @@
       background: #f4f7f5;
       color: #222823;
       padding: 24px;
-    }
-
-    .card-body {
-      margin-top: 24px;
-      line-height: 1.5;
     }
 
     .card-footer {

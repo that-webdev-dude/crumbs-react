@@ -13,7 +13,7 @@ export default function AppNavbar() {
     <nav className='app-navbar'>
       <AppContainer flex>
         <Link to='/'>
-          <h3 className='title'>Recipe.IO</h3>
+          <h5 className='title'>Recipe.IO</h5>
         </Link>
         <div className='menu'>
           {/* searchbar */}
