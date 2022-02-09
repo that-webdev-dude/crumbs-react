@@ -6,10 +6,10 @@ import { useFetch } from '../hooks/useFetch';
 
 // components //
 import AppContainer from '../components/AppContainer';
+import AppRecipe from '../components/AppRecipe';
 
 // styles //
 import './Recipe.scss';
-import AppRecipe from '../components/AppRecipe';
 
 export default function Recipe() {
   const { id } = useParams();
